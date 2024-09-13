@@ -19,7 +19,7 @@ public class Hand {
         if (cards.isEmpty()) {
             throw new IllegalStateException("No cards left in the deck to deal.");
         }
-        return cards.remove(random.nextInt(cards.size()));
+        return cards.remove(cards.size() - 1);
     }
 
     public void dealInitialCards() {
@@ -37,8 +37,5 @@ public class Hand {
         return dealerCards;
     }
 
-    public List<Card> getCards() {
-        return cards;
-    }
+
 }
-// worden de kaarten randomly uitgedeelt aan de speler en dealer

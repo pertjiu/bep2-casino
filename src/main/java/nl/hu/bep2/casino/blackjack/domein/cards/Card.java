@@ -19,8 +19,8 @@ public class Card {
 
     @Override
     public String toString() {
-        return rank + " OF "+  suit;
+        return getRank()+ " OF "+  getSuit();
     }
 }
-// word 1 kaart gemaakt en mocht je 1 kaart willen zien kan dat in deze klasse
+
 

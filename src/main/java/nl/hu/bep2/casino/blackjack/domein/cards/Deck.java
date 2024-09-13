@@ -1,6 +1,8 @@
 package nl.hu.bep2.casino.blackjack.domein.cards;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 public class Deck {
@@ -21,11 +23,13 @@ public class Deck {
                 cards.add(card);
             }
         }
+        Collections.shuffle(cards);
     }
 
     public List<Card> getCards() {
         return cards;
     }
+
+
 }
-// worden de kaarten verzameld en in een deck gestopd door te forloopen totdat
-// er geen nieuwe kaart naam combies meer gemaakt kunnen worden
+
